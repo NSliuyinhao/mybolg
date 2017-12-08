@@ -11,20 +11,20 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-
+//设置监听端口 默认为3000
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
-
+//创建服务器
 var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
-
+//监听服务器状态
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
