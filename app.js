@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 //引入数据库配置文件
+
 var setting = require('./setting');
 //flash 插件
 var flash = require('connect-flash');
