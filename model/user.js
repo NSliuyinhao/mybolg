@@ -35,7 +35,7 @@ User.prototype.save = function (callback) {
                 if(err){
                     return callback(err);
                 }
-                callback(null,user[0]);
+                callback(null,user);
             })
         })
 
@@ -58,7 +58,8 @@ User.get = function (name,callback) {
                 if(err){
                     return callback(err);
                 }
-                return callback(null,user)
+                console.log(user)
+                return callback(null,user);
             })
         })
     })
